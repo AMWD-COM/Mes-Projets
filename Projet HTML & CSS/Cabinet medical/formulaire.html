@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+    <style>
+
+        .principale{
+            background-image: url(image/bodyBg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+            
+            
+            
+            /* display: flex;
+            justify-content: flex-start;
+            flex-direction: column; */
+           
+        }
+
+        .titre{
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        input{
+                    margin: 2em;
+            border: 1px red solid;
+            border-radius: 25px 25px;
+            width: 50%;
+            padding: 10px;
+        }
+        textarea{
+            margin: 2em;
+            border: 1px red solid;
+            border-radius: 25px 25px;
+            width: 50%;
+            height: auto;
+            
+        }
+        div label{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+    </style>
+
+</head>
+<body class="principale">
+    <div class="titre">
+        <h1>Cabinets Medical Dr.Kamel</h1>
+    </div>
+    <form >
+
+        <div class="formulaire">
+            <div class="nom">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom"required placeholder="enter your name">
+            </div>
+            <div class="mail">
+                <label for="Email">Email</label>
+                <input type="email" id="Email"required placeholder="exmplename@domaine.com">
+            <div class="questionnaire">
+                <label for="question"> Votre question</label>
+                <textarea name="question" id="question" cols="30" rows="10"></textarea>
+
+            </div>
+
+            <div class="envoyer">
+                <input type="submit">
+            </div>
+    
+        </div>
+    </form>
+    
+</body>
+</html>

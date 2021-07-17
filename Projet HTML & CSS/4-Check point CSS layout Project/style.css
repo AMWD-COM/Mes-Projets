@@ -1,0 +1,221 @@
+/* général */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700|Work+Sans:300,400,500,600,700&amp;display=swap);
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+h1, h2{
+    font-family: "Work Sans", Arial, sans-serif;
+    /* color:#00C3A5; */
+    font-weight: 300;
+}
+p , 
+nav, 
+.group{
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #747474;
+}
+.green{
+    color:#00C3A5;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 300;
+}
+
+/* header */
+header{
+       
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    
+}
+.header-fixed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6rem;
+    padding: 0 20px;    
+    width: 100%;
+    height: 70px;
+    
+  
+} 
+.logo-header-fixed{
+    display: flex;
+    padding: 0 10px;
+    letter-spacing: -0.9px;
+}
+.logo-header-fixed h1{
+    padding-left: 10px;
+}
+.header-nav{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 20rem;
+    list-style-type: none;
+    /* border: green solid 2px; */
+}
+.header-nav a,
+.header-nav a:hover{
+    text-decoration: none;
+    color: #747474;  
+    
+}
+.header-nav a:hover{
+   color: #00C3A5;    
+}
+.header-nav a:visited{
+    color: #00C3A5;   
+ }
+ .liste-deroulante{
+     cursor: pointer;
+     position: relative;
+ }
+.liste-deroulante-departements li{
+    list-style-type: none;
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.liste-deroulante-departements{
+    padding: 10px;
+    display: none;
+    position: absolute;
+    min-width: 220px;
+    margin-left: -100px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    z-index: 1;
+    
+}
+.liste-deroulante:hover>.liste-deroulante-departements{
+    display: block;
+        
+    }
+   
+.liste-deroulante-departements li:hover{
+    color: #00C3A5;
+    background-color: #74747427;
+    margin: 0;
+}
+
+/* main */
+
+.logo-header-main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.titre-header-main{
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    text-align: center;
+}
+.titre-header-main h1{
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-size: 34px;
+    letter-spacing: 2.15px;
+}
+
+.text-header-main{
+    display: flex;
+    margin: 2.5rem;
+    padding: 2.5rem;
+}
+.text-header-main div{
+    margin: 0 2rem;
+    word-spacing: 3px;
+    line-height: 1.5rem;
+    
+    font-weight: 500;
+    font-size: large;
+}
+/* Servises */
+
+
+.colone-patients{
+    background-color: #00b39b;
+}
+.colone-doctors{
+    background-color: #3d83df;
+}
+.colone-clinics{
+    background-color: #1b2734;
+}
+.services, .container {
+    color:#fff;
+    font-weight: normal;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    height: 400px;
+}
+.services h1{
+    font-size: 26px;
+    font-weight: normal;
+}
+.services h2{
+    font-size: 24px;
+    font-weight: 300;
+}
+.fas{
+    font-size: 24px;  
+    padding: 10px 0;
+    
+}
+.colone-clinics,.colone-doctors,.colone-patients{
+    height: 398px;
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.style-select{
+   
+    line-height: 3rem;
+    font-size: 19px;
+}
+#list-choose{
+    border: none;
+    background-color: inherit;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+option{
+    color: #000;
+}
+
+/* Bande de logos------------------------------------------------ */
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+.logos h1{
+    margin-right: -5rem;
+    text-align: start;
+    font-size: 24px;
+    width: 20%;
+}
+.logos-grid{
+   
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    width: 70%;    
+}

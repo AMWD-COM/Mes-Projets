@@ -1,0 +1,110 @@
+
+/* font */
+
+/* implémenter un font à partir d'un fichier font :
+@font-face{
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* body */
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-size: 90%;
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    font-family: 'Poppins', serif; 
+       
+       
+}
+
+.titre{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+   
+}
+/* main */
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+.bloc{
+    
+    /* border: 1px solid white; */
+    margin-top: 4em;
+    display: inline-block;
+    width: 50%;
+    padding: 2rem;
+    align-content: center;
+    
+}
+
+.offre{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1rem;
+    box-shadow: 0px 9px 8px rgba(92, 67, 67, 0.808);
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    
+}
+
+input[type="submit"]{
+    background-color: hsl(154, 59%, 51%);
+    padding: 1.2em 0;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+
+    
+}
+
+.formulaire{       
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 6em;
+    box-shadow: 0 9px 9px rgba(17, 1, 1, 0.39) ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+       
+}
+
+input{
+    margin: 1em;
+    padding: 9px;
+    border-radius: 5px;
+    border-color: rgba(10, 10, 10, 0.062);
+    width: 50rem;
+}
+
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+/* footer */
+
+footer{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+    width: 99%;
+    
+    
+}
+
+

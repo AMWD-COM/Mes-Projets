@@ -1,0 +1,85 @@
+/* général */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+/* ff:'Zen Tokyo Zoo' */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+header {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Zen Tokyo Zoo', arial, serif;
+    display: flex;
+    
+    
+}
+
+.media {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+.titre {
+    
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    line-height: 2.5rem;
+    color: #ffffff;
+    background-color: rgba(19, 1, 1, 0.151);
+    width: 100%;
+    height: 100vh;
+    
+}
+header h1{
+    padding-top: 10vh;
+    font-weight: normal;
+}
+
+
+button {
+    background-color: rgba(91, 235, 187, 0.699);
+    border-radius: 5px;
+    box-shadow: -2px 4px 4px rgba(99, 224, 233, 0.521);
+    padding: 10px 20px;
+    font-size: large;
+    border: none;
+    margin-top: 15rem;
+    transition: 0.5s ease;
+}
+button > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+/* main */
+
+#section {
+    text-align: center;
+
+    
+}
+.section-A,
+.section-B{
+    padding: 7rem 0;
+    line-height: 2.5rem;
+}
+
+.section-B {
+    background-color: rgb(0, 0, 0);
+    margin-top: 80px;
+    color: #fff;
+      
+}
